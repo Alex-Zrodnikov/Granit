@@ -1,0 +1,357 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+
+::placeholder
+  color: #666
+
+::selection
+  background-color: $accent
+  color: #fff
+
+body
+  font-size: 14px
+  min-width: 320px
+  position: relative
+  line-height: 1.65
+  font-family: $default-font
+  overflow-x: hidden
+  color: $text
+  input, textarea
+      border: #666 1px solid
+      outline: none
+      &:focus:required:invalid
+          border-color: red
+      &:required:valid
+          border-color: green
+
+.img-responsive
+  display: block
+  max-width: 100%
+  height: auto
+  &.img-width
+      width: 100%
+
+.text-center
+  text-align: center
+
+b, strong
+  font-weight: bold
+
+.product, .button, .dark_block
+  transition: all .7s ease-out
+
+.header
+  margin-top: 1.5em
+
+
+.top,.footer_menu
+  display: flex
+  align-items: center
+
+.top_contacts
+  justify-content: space-between
+
+.top_name
+  margin-left: 1em
+  display: inline-block
+  h2
+    font-family: "GothamPro Bold", sans-serif
+    margin-bottom: 0
+    text-transform: uppercase
+    line-height: 1
+  span
+    color: #6c6c6c
+    font-size: 0.9em
+
+.top__button
+  text-align: right
+  text-decoration: none
+  display: inline-block
+  border: 2px solid #000
+  color: #000000
+  padding: 1em
+  margin-left: 1em
+  font-family: "GothamPro Bold", sans-serif
+  transition: all 1s ease
+  &:hover
+     text-decoration: none
+     color: #6c6c6c
+
+
+.top_number
+  text-align: right
+.header_nav
+  margin-top: 2em
+  width: 100%
+  margin-bottom: -2em
+  background-color: #ffd200
+  z-index: 100
+  position: relative
+.header_nav-menu
+  position: relative
+  z-index: 
+  
+
+
+ 
+  display: flex
+  justify-content: space-around
+  padding: 1.5em 0
+  a
+      font-family: "GothamPro Bold", sans-serif
+      text-decoration: none
+      color: #000000
+
+  .header_nav-icon
+    display: none
+.main
+  width: 100%
+  position: relative
+  background-image: url(../img/@1x/main_bg.jpg)
+  padding-bottom: 50px
+  background-size: cover
+
+.main_container
+  padding-top: 10%
+  color: #ffffff
+  .main__button
+      display: inline
+      width: 50%
+  
+.link
+ text-decoration: underline
+ transition: all 1s ease
+ color: #ffffff
+ &:hover
+  color: #f6f6f6
+
+.main_delivery
+  font-size: 2.57em
+  text-transform: uppercase
+  font-family: "GothamPro Bold", sans-serif
+  letter-spacing: 1px
+  margin-bottom: 1em
+
+.main__buttons
+  margin-top: 4em
+
+.main-overlay
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(44, 62, 80, 0.4)
+
+
+.section_title
+  margin-top: 3em
+  margin-bottom: 2em
+  font-size: 1.4em
+  text-transform: uppercase
+  font-family: "GothamPro Bold", sans-serif
+
+
+.product
+
+  text-align: center
+  border: 2px solid #f6f6f6
+  margin: 0 1em 4em
+  img
+      margin: 0 auto
+      display: block
+      padding: 2em 0
+  &:nth-child(even)
+      padding-bottom: 4em
+  &:hover
+      box-shadow: 0 9px 21px 0 rgba(0, 0, 0, 0.5)
+
+.product__second
+  img
+    padding-top: 4em
+
+.card__title
+  font-size: 1.1em
+  font-family: "GothamPro Bold", sans-serif
+  font-weight: 700
+  display: inline-block
+
+.product__title, .service__title
+  border-bottom: 1px solid #c9c9c9
+
+
+.product__desc
+  color: #6c6c6c
+  padding: 1em 1.8em 1.2em
+
+.product__price, .price
+  font-size: 1.2em
+  font-family: "GothamPro Bold", sans-serif
+  margin: 1.5em 0
+
+.button
+  text-align: center
+  font-family: "GothamPro Bold", sans-serif
+  display: block
+  text-decoration: none
+  color: #000
+  background-color: #ffd200
+  padding: 20px 55px
+  margin: 2em auto
+  &:hover
+      text-decoration: none
+      color: #ffffff
+
+.product__button
+  width: 60%
+
+
+
+
+
+//our-benefits start
+.dark-section
+  text-align: center
+  background-color: $add-color
+  img
+      display: block
+      margin: 2.2em auto
+
+
+
+
+.dark_block
+  border: 2px solid #ffffff
+  padding-bottom: 1em
+  margin: 0 1em 4em
+  &:hover
+      background-color: #fff
+      box-shadow: 0 9px 21px 0 rgba(0, 0, 0, 0.1)
+
+.benefit_desc
+  padding: 1em 0.8em
+  line-height: 1.5
+
+
+
+.popular-product_item
+  padding: 1.5em
+  text-align: center
+  border: 2px solid #f6f6f6
+  margin: 0 0.6em 4em
+
+.popular-product_img
+  background-size: cover
+  margin-bottom: 1.5em
+
+
+.popular-product__title
+  font-size: 0.9em
+  font-weight: 600
+  display: inline
+  border-bottom: 1px solid #c9c9c9
+
+.price-sale
+  color: #ff0000
+  font-family: "GothamPro Bold", sans-serif
+  font-size: 1.2em
+
+
+.old-price
+  font-size: 0.9em
+  color: #9e9e9e
+
+
+.price-block
+  margin: 1.5em 0
+  display: flex
+  justify-content: space-around
+  align-items: center
+
+
+.sale
+  background-color: #ff0000
+  display: inline-block
+  padding: 0.3em 1em
+  position: absolute
+  top: 8.5%
+  left: 15%
+  span
+      text-transform: uppercase
+      color: #ffffff
+      font-weight: 500
+      font-size: 0.9em
+
+.popular-product_button
+  padding: 20px 0
+  width: 100%
+
+
+.contacts
+  position: relative
+  color: #000
+  background-image: url(../img/@1x/map.png)
+  width: 100%
+  min-height: 100%
+  background-size: cover
+  &__point
+    position: absolute
+    left: 40%
+    top: 50%
+    color: #ffff00
+
+.contacts__block
+  margin-top: 6.5%
+  margin-bottom: 6.5%
+  padding-left: 8%
+  background-color: #ffffff
+
+i
+  font-style: normal
+  font-family: fontawesome !important
+
+.numbers
+  font-family: "GothamPro Bold", sans-serif
+  margin-bottom: 2em
+  span
+      font-family: "GothamPro", sans-serif
+
+
+.contacts__title
+  font-family: "GothamPro Bold", sans-serif
+  text-transform: uppercase
+  padding-top: 3em
+
+//footer start
+footer
+  width: 100%
+  background-color: #292929
+  color: #ffffff
+  padding-bottom: 2em
+
+.footer__number
+  text-align: right
+
+
+.footer__line
+  padding: 2em 0 1em 0
+
+  span
+      color: #ffffff
+
+.footer__button
+  color: #ffffff
+  border: 2px solid #fff
+
+.text-align__end
+  text-align: end
+
+.footer__author
+  text-decoration: none
+  color: #ffffff
+
+//footer end
+
+@import "media" // Always at the end
